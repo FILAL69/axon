@@ -1,7 +1,8 @@
 export default function Home() {
   return (
-    <div className="flex items-center justify-center h-screen bg-black text-white text-3xl">
-      ✅ Axon is working!
+    <div>
+      <h1>Hello, Axon is live! 🎉</h1>
+      <p>This is your homepage. You did it!</p>
     </div>
   );
 }
