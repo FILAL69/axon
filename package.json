@@ -1,13 +1,11 @@
-
 {
   "name": "axon",
   "version": "1.0.0",
   "private": true,
- "scripts": {
-  "dev": "next dev",
-  "build": "next build && echo '{}' > .next/routes-manifest.json",
-  "start": "next start"
-}
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build && echo '{}' > .next/routes-manifest.json",
+    "start": "next start"
   },
   "dependencies": {
     "next": "14.1.0",
@@ -15,8 +13,8 @@
     "react-dom": "18.2.0"
   },
   "devDependencies": {
-    "autoprefixer": "^10.4.14",
-    "postcss": "^8.4.21",
-    "tailwindcss": "^3.3.2"
+    "autoprefixer": "10.4.14",
+    "postcss": "8.4.21",
+    "tailwindcss": "3.3.2"
   }
 }
