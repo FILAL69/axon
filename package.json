@@ -3,10 +3,11 @@
   "name": "axon",
   "version": "1.0.0",
   "private": true,
-  "scripts": {
-    "dev": "next dev",
-    "build": "next build",
-    "start": "next start"
+ "scripts": {
+  "dev": "next dev",
+  "build": "next build && echo '{}' > .next/routes-manifest.json",
+  "start": "next start"
+}
   },
   "dependencies": {
     "next": "14.1.0",
