@@ -15,8 +15,19 @@ export default function Home() {
     }}>
       <h1>Welcome to Axon</h1>
       <p>This is your home page. Click below to try the assistant.</p>
-      <a href="/try" style={{
-        marginTop: '1.5rem',
-        padding: '1rem 2rem',
-        backgroundColor
-
+      <a
+        href="/try"
+        style={{
+          marginTop: '1.5rem',
+          padding: '1rem 2rem',
+          backgroundColor: '#6366f1',
+          color: '#fff',
+          borderRadius: '8px',
+          textDecoration: 'none'
+        }}
+      >
+        Try the Assistant
+      </a>
+    </div>
+  );
+}
