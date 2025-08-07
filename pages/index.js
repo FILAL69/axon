@@ -18,26 +18,35 @@ export default function Home() {
         style={{ width: '120px', marginBottom: '2rem' }} 
       />
 
-      {/* Button */}
+      {/* Button with rainbow Siri-style gradient */}
       <a
         href="/try"
         style={{
           padding: '1rem 2rem',
-          backgroundColor: '#111',
-          color: '#0f0',
+          background: 'linear-gradient(90deg, #ff0057, #ff7b00, #ffee00, #00ff87, #00cfff, #a200ff, #ff0057)',
+          backgroundSize: '300% 300%',
+          color: '#fff',
           textDecoration: 'none',
           borderRadius: '8px',
           fontWeight: 'bold',
-          boxShadow: '0 0 10px #0f0',
-          transition: '0.3s',
+          boxShadow: '0 0 15px rgba(255, 255, 255, 0.2)',
+          animation: 'rainbowMove 6s ease infinite',
         }}
-        onMouseOver={(e) => e.target.style.backgroundColor = '#222'}
-        onMouseOut={(e) => e.target.style.backgroundColor = '#111'}
       >
         Try VaultAI
       </a>
+
+      {/* Keyframe style for animation */}
+      <style jsx>{`
+        @keyframes rainbowMove {
+          0% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+          100% { background-position: 0% 50%; }
+        }
+      `}</style>
     </div>
   );
 }
+
 
 
