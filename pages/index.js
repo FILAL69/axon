@@ -1,52 +1,60 @@
+// pages/index.js
+
 export default function Home() {
   return (
-    <div style={{
-      backgroundColor: '#000',
-      minHeight: '100vh',
-      display: 'flex',
-      flexDirection: 'column',
-      alignItems: 'center',
-      justifyContent: 'center',
-      fontFamily: "'Segoe UI', Tahoma, Geneva, Verdana, sans-serif",
-      color: '#fff',
-      padding: '2rem'
-    }}>
-      {/* Logo */}
-      <img 
-        src="/vault-logo.png" 
-        alt="VaultAI Logo" 
-        style={{ width: '120px', marginBottom: '2rem' }} 
-      />
-
-      {/* Button with rainbow Siri-style gradient */}
-      <a
-        href="/try"
-        style={{
-          padding: '1rem 2rem',
-          background: 'linear-gradient(90deg, #ff0057, #ff7b00, #ffee00, #00ff87, #00cfff, #a200ff, #ff0057)',
-          backgroundSize: '300% 300%',
-          color: '#fff',
-          textDecoration: 'none',
-          borderRadius: '8px',
-          fontWeight: 'bold',
-          boxShadow: '0 0 15px rgba(255, 255, 255, 0.2)',
-          animation: 'rainbowMove 6s ease infinite',
-        }}
-      >
-        Try VaultAI
-      </a>
-
-      {/* Keyframe style for animation */}
-      <style jsx>{`
-        @keyframes rainbowMove {
-          0% { background-position: 0% 50%; }
-          50% { background-position: 100% 50%; }
-          100% { background-position: 0% 50%; }
-        }
-      `}</style>
+    <div style={styles.container}>
+      <img src="/vault-logo.png" alt="VaultAI Logo" style={styles.logo} />
+      <h1 style={styles.title}>VaultAI</h1>
+      <p style={styles.tagline}>Unleash intelligence. Redefined simplicity.</p>
+      <a href="/try" style={styles.button}>Try VaultAI</a>
     </div>
   );
 }
+
+const styles = {
+  container: {
+    backgroundColor: "#000000", // deep black
+    color: "#ffffff",           // pure white text
+    height: "100vh",
+    width: "100vw",
+    fontFamily: "'Inter', 'Helvetica Neue', sans-serif",
+    display: "flex",
+    flexDirection: "column",
+    justifyContent: "center",
+    alignItems: "center",
+    padding: "0 20px",
+    textAlign: "center",
+  },
+  logo: {
+    width: 120,
+    height: "auto",
+    marginBottom: 30,
+  },
+  title: {
+    fontSize: "3rem",
+    fontWeight: "600",
+    margin: 0,
+    letterSpacing: "1px",
+  },
+  tagline: {
+    fontSize: "1.2rem",
+    color: "#888888",
+    marginTop: 10,
+    marginBottom: 40,
+  },
+  button: {
+    backgroundImage: "linear-gradient(90deg, #ff4d4d, #ffb347)", // Ferrari red to yellow (like a sporty gradient)
+    color: "#fff",
+    fontSize: "1rem",
+    fontWeight: "500",
+    textDecoration: "none",
+    padding: "12px 28px",
+    borderRadius: "50px",
+    transition: "0.3s",
+  },
+};
+
+
 
 
 
